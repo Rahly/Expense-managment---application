@@ -1,5 +1,8 @@
 package home.expenses.main;
 
+import java.util.Locale;
+import java.util.ResourceBundle;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -17,10 +20,12 @@ public class Main extends Application{
 	public void start(Stage primaryStage) throws Exception {
 		
 		FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/BorderPaneMain.fxml"));
+		ResourceBundle bundle = ResourceBundle.getBundle("bundles.messages");
+		loader.setResources(bundle);
 		BorderPane borderPane = loader.load();
 		Scene scene = new Scene(borderPane);
 		primaryStage.setScene(scene);
-		primaryStage.setTitle("System zarz¹dzania wydatkami");
+		primaryStage.setTitle(bundle.getString("title.application"));
 		primaryStage.show();
 		primaryStage.setResizable(false);
 		
