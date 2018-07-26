@@ -8,8 +8,8 @@ public class TopMenuButtonsController {
 	
 	
 	@FXML
-	public void addExpenses() {
-		System.out.println("addExpenses");
+	public void onExpenses() {
+		System.out.println("onExpenses");
 	}
 	
 	@FXML

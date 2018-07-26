@@ -7,7 +7,7 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.expenses.controllers.TopMenuButtonsController">
    <children>
-      <ToggleButton mnemonicParsing="false" onAction="#addExpenses" prefHeight="50.0" prefWidth="150.0" text="%add.expenses">
+      <ToggleButton mnemonicParsing="false" onAction="#onExpenses" prefHeight="50.0" prefWidth="150.0" text="%expenses">
          <toggleGroup>
             <ToggleGroup fx:id="toggleButtons" />
          </toggleGroup>
