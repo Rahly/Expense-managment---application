@@ -1,6 +1,5 @@
 package home.expenses.main;
 
-import java.util.Locale;
 import java.util.ResourceBundle;
 
 import javafx.application.Application;
@@ -27,9 +26,7 @@ public class Main extends Application{
 		primaryStage.setScene(scene);
 		primaryStage.setTitle(bundle.getString("title.application"));
 		primaryStage.show();
-		primaryStage.setResizable(false);
-		
-		
+		primaryStage.setResizable(false);		
 	}
 
 }
