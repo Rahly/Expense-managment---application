@@ -1,4 +1,4 @@
-package home.expenses.dialogs;
+package home.expenses.utils;
 
 import java.util.Optional;
 import java.util.ResourceBundle;

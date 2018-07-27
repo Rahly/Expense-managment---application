@@ -4,7 +4,8 @@ import java.io.IOException;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-import home.expenses.dialogs.DialogsUtils;
+import home.expenses.utils.DialogsUtils;
+import home.expenses.utils.FxmlUtils;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -37,17 +38,8 @@ public class MainController {
 	
 	@FXML 
 	public void setCenter(String fxmlPath) {
-		FXMLLoader loader = new FXMLLoader(this.getClass().getResource(fxmlPath));
-		ResourceBundle bundle = ResourceBundle.getBundle("bundles.messages");
-		loader.setResources(bundle);
-		Parent parent = null;
-		try {
-			parent = loader.load();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		borderPane.setCenter(parent);
+
+		borderPane.setCenter(FxmlUtils.fxmlLoader(fxmlPath));
 	}
 	
 	@FXML
